@@ -15,6 +15,7 @@
                 android:id="@+id/text_view_title"
                 style="@style/SnapTimePicker.Title"
                 android:layout_width="0dp"
+                android:gravity="center"
                 android:layout_height="wrap_content"
                 android:background="@color/snap_time_picker_default_primary"
                 android:padding="@dimen/snap_time_picker_margin_padding_large"
@@ -143,7 +144,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/snap_time_picker_cancel"
                 app:layout_constraintBottom_toBottomOf="@id/button_confirm"
-                app:layout_constraintEnd_toStartOf="@id/button_confirm" />
+                app:layout_constraintEnd_toStartOf="@id/button_confirm"
+                app:layout_constraintStart_toStartOf="parent" />
 
         <Button
                 android:id="@+id/button_confirm"
@@ -155,7 +157,8 @@
                 android:layout_marginBottom="@dimen/snap_time_picker_margin_padding"
                 android:text="@string/snap_time_picker_confirm"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="60dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
